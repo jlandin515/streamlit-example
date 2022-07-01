@@ -24,7 +24,6 @@ def main():
     st.subheader("DocumentFiles")
 
   if choice == "Image":
-    st.subheader("Image")
     image_file = st.file_uploader("Upload Images", type=["png","jpg","jpeg"])
 
     if image_file is not None:
