@@ -13,18 +13,18 @@ def load_image(image_file):
 def main():
   st.title("Aplicación de Clasificación de Lenguaje de Señas")
 
-  menu = ["Image","Dataset","DocumentFiles","About"]
+  menu = ["Clasificar Imagen","Dataset","DocumentFiles","About"]
   choice = st.sidebar.selectbox("Menu",menu)
 
-  if (choice == "Image"):
-    st.subheader("Image")
+  if (choice == "Clasificar Imagen"):
+    st.subheader("Clasificar Imagen")
   elif (choice == "Dataset"):
     st.subheader("Dataset")
   elif (choice == "DocumentFiles"):
     st.subheader("DocumentFiles")
 
-  if choice == "Image":
-    image_file = st.file_uploader("Upload Images", type=["png","jpg","jpeg"])
+  if choice == "Clasificar Imagen":
+    image_file = st.file_uploader("Subir Imagen", type=["png","jpg","jpeg"])
 
     if image_file is not None:
       file_details = {"filename":image_file.name, "filetype":image_file.type,
