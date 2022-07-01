@@ -4,10 +4,6 @@ import math
 import pandas as pd
 import streamlit as st
 
-"""
-# Aplicación de Clasificación de Imágenes de Lenguaje de Señas 
-
-"""
 
 def main():
   st.title("File Upload Tutorial")
