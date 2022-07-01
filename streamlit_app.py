@@ -4,7 +4,6 @@ import math
 import pandas as pd
 import streamlit as st
 from PIL import Image
-from pyngrok import ngrok
 import torch
 import torch.optim as optim
 import numpy as np
