@@ -13,15 +13,15 @@ def load_image(image_file):
 def main():
   st.title("Aplicación de Clasificación de Lenguaje de Señas")
 
-  menu = ["Clasificar Imagen","Dataset","DocumentFiles","About"]
+  menu = ["Clasificar Imagen","Proceso de Modelamiento","Evaluación de Testing"]
   choice = st.sidebar.selectbox("Menu",menu)
 
   if (choice == "Clasificar Imagen"):
     st.subheader("Clasificar Imagen")
-  elif (choice == "Dataset"):
-    st.subheader("Dataset")
-  elif (choice == "DocumentFiles"):
-    st.subheader("DocumentFiles")
+  elif (choice == "Proceso de Modelamiento"):
+    st.subheader("Proceso de Modelamiento")
+  elif (choice == "Evaluación de Testing"):
+    st.subheader("Evaluación de Testing")
 
   if choice == "Clasificar Imagen":
     image_file = st.file_uploader("Subir Imagen", type=["png","jpg","jpeg"])
