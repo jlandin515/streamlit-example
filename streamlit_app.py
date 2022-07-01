@@ -4,11 +4,23 @@ import math
 import pandas as pd
 import streamlit as st
 from PIL import Image
-
+from pyngrok import ngrok
+import torch
+import torch.optim as optim
+import numpy as np
+import torch.nn as nn
+import torch.nn.functional as F
+from torchvision import datasets, transforms, models
+import torchvision.transforms as transforms
+from torch.utils.data.sampler import SubsetRandomSampler
 
 def load_image(image_file):
 	img = Image.open(image_file)
 	return img
+
+def load_model():
+  model = model.load_state_dict(torch.load('model_pro1.pt'))
+  return model
 
 def main():
   st.title("Aplicación de Clasificación de Lenguaje de Señas")
@@ -32,4 +44,7 @@ def main():
       #st.write(file_details)
       st.image(load_image(image_file),width=250)
 
+  model = load_model()
+  output = model(image_file)
+  st.success(output)
 main()
