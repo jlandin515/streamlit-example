@@ -1,4 +1,3 @@
-from collections import namedtuple
 import altair as alt
 import math
 import pandas as pd
@@ -66,7 +65,7 @@ def main():
       #st.write(file_details)
       st.image(load_image(image_file),width=250)
       model = load_model()
-      classes = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','NAN','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+      classes = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','NINGUNA','O','P','Q','R','S','T','U','V','W','X','Y','Z']
       img = load_image(image_file)
       to_tensor = transforms.Compose([transforms.Resize(256),transforms.CenterCrop(224), transforms.ToTensor(),transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))])
       tensor = to_tensor(img)
