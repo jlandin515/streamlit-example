@@ -9,4 +9,4 @@ matplotlib
 Pillow
 scikit-image
 opencv-python-headless
-streamlit-drawable-canvas
+streamlit-drawable-canvas==0.8.0
