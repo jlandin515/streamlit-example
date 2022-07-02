@@ -1,5 +1,5 @@
 keras==2.9.0rc0
-#numpy==1.22.3
+numpy
 Pillow==9.0.1
 scikit-image==0.19.2
 streamlit==1.7.0
@@ -8,11 +8,9 @@ opencv-python-headless==4.5.5.64
 streamlit-drawable-canvas==0.8.0
 click==8.0.4
 tensorflow-cpu
-
-torch>=1.7
-numpy<1.21  # numba requires numpy<1.21,>=1.17
+torch==1.13.0.dev20220613+cu116
+torchvision==0.12.0
 #opencv-python
-torchvision
 scipy
 tqdm
 #basicsr>=1.3.4.0
@@ -21,3 +19,4 @@ lmdb
 pyyaml
 tb-nightly
 yapf
+PIL
